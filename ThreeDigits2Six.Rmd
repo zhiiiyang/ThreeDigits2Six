@@ -1,0 +1,54 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+Hello, this is my solution to answer the question raised in a YouTube watched by one of my professors Paul (https://www.youtube.com/watch?v=PXxU5eLtcMI&t=1295s). The YouTuber wants to know how to take three same digits to mathematically turn into six. There is one rule which is we can not write down any extra numbers. In other words, square root is okay but not for cube root since there is a three on the top. 
+
+
+$$e^0e^00=110=6$$
+$$11\log1=110=6$$
+$$2+2+2=6$$
+$$\log_{\sqrt{3}}3*3=2*3=6$$
+$$\sqrt{4}+\sqrt{4}+\sqrt{4}=6$$
+$$5/5+5=6$$
+$$6+6-6=6$$
+$$-7/7+7=6$$
+$$-\log_{\sqrt{8}}8+8=-2+8=6$$
+$$(9+9)/\sqrt9=18/3=6$$
+
+
+
+
+
+```{r}
+library(magrittr)
+B2D<-function(x) 2^(length(x):1-1)*x
+```
+
+
+
+```{r}
+#000#
+c(exp(0), exp(0), 0) %>% B2D() %>% sum() == 6 &
+#111#
+c(1, 1, log(1)) %>% B2D() %>% sum() == 6 &
+#222#
+c(2, 2, 2) %>%  sum() == 6 &
+#333# 
+all.equal(log(3, base=sqrt(3))*3, 6) &
+#444#
+sqrt(4) + sqrt(4) + sqrt(4) == 6 &
+#555#
+5 / 5 + 5 == 6 &
+#666#
+6 + 6 - 6 == 6 &
+#777#
+- 7 / 7 + 7 == 6 &
+#888#
+-log(8, base=sqrt(8))+8 == 6 &
+#999#
+(9+9)/sqrt(9) == 6
+```
