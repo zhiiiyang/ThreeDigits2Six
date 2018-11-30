@@ -1,0 +1,2 @@
+# ThreeDigits2Six
+Hello, this is my solution to answer the question raised in a YouTube watched by one of my professors Paul Marjoram (https://www.youtube.com/watch?v=PXxU5eLtcMI&t=1295s). Basically, the YouTuber wants to know how to take three same digits to mathematically turn into six. There is one rule, which is that we can not write down any extra numbers. In other words, square root is okay but not for cube root since there is a three on the top. 
