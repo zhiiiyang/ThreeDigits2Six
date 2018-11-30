@@ -3,6 +3,7 @@ Hello, this is my solution to answer the question raised in a video on YouTube n
 
 
 My answer is shown in the pdf file. 
+https://github.com/zhiiyang/ThreeDigits2Six/blob/master/ThreeDigits2Six.pdf
 
 Here is the answer from someone else. 
 http://www.cut-the-knot.org/arithmetic/funny/6by3digits.shtml
